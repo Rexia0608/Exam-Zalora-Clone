@@ -1,332 +1,197 @@
-*{
+    *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    /* outline: 1px solid black; and this part is my css  */
-}
-body{
+    /* outline: 1px solid black;  */
+    }
+    body{
     background-color: #0E0E0E;
-}
-main{
+    }
+    main{
     width: 1130px;
     background-color: #FFFFFF;
     margin: 0px auto;
     outline: 1px solid black;
-}
-header{
+    }
+    header{
     width: 100%;
     height: 13%;
-    background-color: #FFFFFF;
-}
-header p, header form, nav li, article .card, footer li{
+    }
+    header p, header form, nav li, article .card, footer li, button{
     display: inline-block;
     vertical-align: top;
-}
-header p{
+    }
+    header p{
     width: 24%;
     font-size: 24px;
     letter-spacing: 5px;
     text-align: center;
     margin-top: 12px;
     font-weight: 100;
-}
-header form{
+    }
+    header form{
     margin-top: 12px;
     width: 65%;
-}
-header form input{
+    }
+    header form input{
     width: 75%;
     height: 25px;
     font-size: 12px;
     color: #D8D2C9;
     border-radius: 20px;
     border: 1px solid #aaa49d;
-}
-header button{
-    margin-left: 6%;
+    }
+    header .btn{
+    margin-left: 2%;
     height: 25px;
     font-weight: 800;
     font-size: 12px;
     border: none;
     background-color: #FFFFFF;
-}
-button .fa-user-o{
+    width: 5%;
+    border-radius: 50%;
+    }
+    button .fa{
     font-size: 18px;
-    position: relative;
-    top: 2px;
-}
-nav{
+    }
+    .btn:hover{
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+    }
+    nav{
     width: 100%;
     height: 30%;
     background-color: #FFFFFF;
     display: block;
     margin-top: 15px;
     border-bottom: 1px solid #aaa49d; 
-}
-nav ul{
+    }
+    nav ul{
     width: 100%;
-}
-nav li{
+    }
+    nav li{
     position: relative;
     left: 50px;
     margin-left: 20px;
-}
-nav li a{
+    }
+    nav li a{
     font-size: 12px;
     font-weight: 800;
     color: black;
     text-decoration: none;
-}
-main h1{
-    margin-top: 2%;
-    width: 93%;
-    padding-left: 7%;
-    font-size: 18px;
-    font-weight: 200;
-}
-main article{
+    }
+    article ul, li{
+    list-style: none;
+    }
+    article .wrap{
+    width: 800px;
+    height: 270px;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    }
+    article .gg_btn{
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    }
+    article .gg_left{ 
+    background: url(https://picsum.photos/200) no-repeat center center; }
+    article .gg_right{ 
+    background: url(https://picsum.photos/200) no-repeat center center;
+    right: 0px;
+    }
+    article .wrap ul{ 
+    width: 800px;
+    height: 270px;
+    }
+    article .wrap ul li{
+    position: absolute;
+    }
+    article .carousel-img{
     width: 100%;
-}
-article .row{
-    margin-top: 2%;
+    background-repeat: no-repeat;
+    }
+    main article{
+    width: 100%;
+    }
+    article .row{
+    margin-top: 5%;
     margin-left: 7%;
-}
-article .card{
-    width: 30%;
+    }
+    article .card{
+    width: 150px;
     padding-right: 1%;
     box-shadow: 2px;
-}
-.card img{
+    }
+    .card img{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2%;
     height: 100%;
-}
-.card a{
+    }
+    .card a{
     text-decoration: none;
-}
-.card .product-name{
+    }
+    .card .product-name{
     font-size: 15px;
     font-weight: 800;
     color: black;
-}
-.card .product-discreption{
-   font-size: 13px;
-   color: #aaa49d;
-}
-.card .pricing{
+    }
+    .card .product-discreption{
+    font-size: 13px;
+    color: #aaa49d;
+    }
+    .card .pricing{
     margin-top: 2%;
     font-weight: 600;
     padding-left: 3%;
     font-size: 13px;
     color: red;
-}
-.card .pricing-promo{
+    }
+    .card .pricing-promo{
     margin-top: 2%;
     font-weight: 600;
     padding-left: 3%;
     font-size: 13px;
     color: black;
-}
-.card .cross{
+    }
+    .card .cross{
     text-decoration: line-through;
     color: #aaa49d;
-}
-.card .product-promo{
+    }
+    .card .product-promo{
     color: #aaa49d;
-}
-footer{
+    }
+    footer{
     margin-top: 50px;
     width: 100%;
     height: 90px;
     background-color: black;
-}
-footer ul{
+    }
+    footer ul{
     padding-top: 30px;
     text-align: center;
     width: 100%;
-}
-footer li{
+    }
+    footer li{
     position: relative;
     width: 97px;
     border-right: 1px solid #aaa49d;
-}
-footer .logo{
+    }
+    footer .logo{
     width: 110px;
     position: relative;
-    left: 520px;
+    left: 510px;
     display: block;
     border: none;
-}
-footer li a{
+    }
+    footer li a{
     font-size: 11px;
     font-style: none;
     color: #aaa49d;
-}
-@media only screen and (max-width: 481px) {
-    body{
-        background-color: #0E0E0E;
     }
-    main{
-        width: 480px;
-        background-color: #FFFFFF;
-        margin: 0px auto;
-        outline: 1px solid black;
-    }
-    header{
-        width: 100%;
-        height: 13%;
-        background-color: #FFFFFF;
-    }
-    header p, header form, nav li, article .card, footer li{
-        display: inline-block;
-        vertical-align: top;
-    }
-    header p{
-        width: 15%;
-        font-size: 15px;
-        letter-spacing: 2px;
-        text-align: center;
-        margin-top: 12px;
-        margin-left: 7%;
-        font-weight: 100;
-    }
-    header form{
-        margin-top: 12px;
-        width: 65%;
-    }
-    header form input{
-        width: 60%;
-        margin-left: 10%;
-        height: 15px;
-        font-size: 12px;
-        color: #D8D2C9;
-        border-radius: 20px;
-        border: 1px solid #aaa49d;
-    }
-    header button{
-        margin-left: 6%;
-        height: 25px;
-        font-weight: 800;
-        font-size: 12px;
-        border: none;
-        background-color: #FFFFFF;
-        display: none;
-    }
-    button .fa-user-o{
-        font-size: 18px;
-        position: relative;
-        top: 2px;
-    }
-    nav{
-        width: 100%;
-        height: 30%;
-        background-color: #FFFFFF;
-        display: block;
-        margin-top: 15px;
-        border-bottom: 1px solid #aaa49d; 
-    }
-    nav li{
-        width: 30px;
-        background-color: red;
-    }
-    nav ul{
-        width: 100%;
-        position: relative;
-        right: 50px;
-    }
-    nav li a{
-        font-size: 5px;
-        font-weight: 800;
-        color: black;
-        text-decoration: none;
-    }
-    main h1{
-        margin-top: 2%;
-        width: 90%;
-        padding-left: 7%;
-        font-size: 12px;
-        font-weight: 200;
-    }
-    main article{
-        width: 100%;
-    }
-    article .row{
-        margin-top: 2%;
-        margin-left: 6%;
-    }
-    article .card{
-        width: 38%;
-        box-shadow: 2px;
-    }
-    .card img{
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 2%;
-        height: 100%;
-    }
-    .card a{
-        text-decoration: none;
-    }
-    .card .product-name{
-        font-size: 15px;
-        font-weight: 800;
-        color: black;
-    }
-    .card .product-discreption{
-       font-size: 13px;
-       color: #aaa49d;
-    }
-    .card .pricing{
-        margin-top: 2%;
-        font-weight: 600;
-        padding-left: 3%;
-        font-size: 13px;
-        color: red;
-    }
-    .card .pricing-promo{
-        margin-top: 2%;
-        font-weight: 600;
-        padding-left: 3%;
-        font-size: 13px;
-        color: black;
-    }
-    .card .cross{
-        text-decoration: line-through;
-        color: #aaa49d;
-    }
-    .card .product-promo{
-        color: #aaa49d;
-    }
-    footer{
-        margin-top: 50px;
-        width: 100%;
-        height: 90px;
-        background-color: black;
-    }
-    footer ul{
-        padding-top: 30px;
-        text-align: center;
-        width: 100%;
-    }
-    footer li{
-        position: relative;
-        width: 97px;
-        border-right: 1px solid #aaa49d;
-    }
-    footer .logo{
-        width: 110px;
-        position: relative;
-        left: 520px;
-        display: block;
-        border: none;
-    }
-    footer li a{
-        font-size: 11px;
-        font-style: none;
-        color: #aaa49d;
-    }
-  }
-   /* now let see the output  */
+
+    /* now let see the output  */

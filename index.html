@@ -3,18 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exam Zalora Clone</title>
-        <link rel="stylesheet" href="style.css">
-        
+        <title>Zalora</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        
+        <!-- Plugins start here  -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js">
+        </script>
     </head>
     <body>
         <main>
             <header>
                 <p>ZALORA</p>
                 <form action="">
-                    <input type="text" value="  Search from over 50 000 prouducts">
-                    <button><i class="fa fa-user-o"></i> Login/ Register</button>
+                    <input class="Search" type="text" value="  Search from over 50 000 prouducts">
+                    <button class="btn"><i class="fa fa-user-o"></i></button>
+                    <button class="btn"><i class="fa fa-heart-o"></i></button>
+                    <button class="btn"><i class="fa fa-dropbox"></i></button>
                 </form>
                 <nav>
                    <ul>
@@ -28,67 +41,565 @@
                    </ul>
                 </nav>
             </header>
-            <h1>All Products</h1>
             <article>
-              <div class="row">
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (1).png" alt="product image">
-                     <p class="product-name">Topman</p>
-                     <p class="product-discreption">Skinny two Cargo Trauser</p>
-                     <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (2).png" alt="product image">
-                     <p class="product-name">Cotton On</p>
-                     <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
-                     <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (3).png" alt="product image">
-                     <p class="product-name">Style State</p>
-                     <p class="product-discreption">Pleated Max Skirt</p>
-                     <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
-                    </a>
-                </div>
-               
-              </div>
-              <div class="row">
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (4).png" alt="product image">
-                     <p class="product-name">ONLY</p>
-                     <p class="product-discreption">Leslie Long Sleeve Shirt</p>
-                     <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (5).png" alt="product image">
-                     <p class="product-name">Trendyol</p>
-                     <p class="product-discreption">Oversized Collar Trench Coat</p>
-                     <p class="pricing-promo">Php 6,399.00</p>
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="">
-                     <img src="img/product1 (6).png" alt="product image">
-                     <p class="product-name">Cotton On</p>
-                     <p class="product-discreption">Haven Wide Legs Pants</p>
-                     <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
-                    </a>
-                </div>
-               
-              </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div class="row">
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (4).png" alt="product image">
+                               <p class="product-name">ONLY</p>
+                               <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                               <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (5).png" alt="product image">
+                               <p class="product-name">Trendyol</p>
+                               <p class="product-discreption">Oversized Collar Trench Coat</p>
+                               <p class="pricing-promo">Php 6,399.00</p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (6).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Haven Wide Legs Pants</p>
+                               <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (2).png" alt="product image">
+                               <p class="product-name">Topman</p>
+                               <p class="product-discreption">Skinny two Cargo Trauser</p>
+                               <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (3).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                               <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (6).png" alt="product image">
+                               <p class="product-name">Style State</p>
+                               <p class="product-discreption">Pleated Max Skirt</p>
+                               <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                              </a>
+                          </div>
+                      </div>
+                        <div class="container">
+                          <div class="carousel-caption">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (1).png" alt="product image">
+                                 <p class="product-name">ONLY</p>
+                                 <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                                 <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (5).png" alt="product image">
+                                 <p class="product-name">Trendyol</p>
+                                 <p class="product-discreption">Oversized Collar Trench Coat</p>
+                                 <p class="pricing-promo">Php 6,399.00</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (2).png" alt="product image">
+                                 <p class="product-name">Cotton On</p>
+                                 <p class="product-discreption">Haven Wide Legs Pants</p>
+                                 <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (1).png" alt="product image">
+                                 <p class="product-name">Topman</p>
+                                 <p class="product-discreption">Skinny two Cargo Trauser</p>
+                                 <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (2).png" alt="product image">
+                                 <p class="product-name">Cotton On</p>
+                                 <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                                 <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="">
+                                 <img src="img/product1 (5).png" alt="product image">
+                                 <p class="product-name">Style State</p>
+                                 <p class="product-discreption">Pleated Max Skirt</p>
+                                 <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                          <div class="carousel-caption">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (4).png" alt="product image">
+                               <p class="product-name">ONLY</p>
+                               <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                               <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                              </a>
+                          </div>
+          
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (3).png" alt="product image">
+                               <p class="product-name">Trendyol</p>
+                               <p class="product-discreption">Oversized Collar Trench Coat</p>
+                               <p class="pricing-promo">Php 6,399.00</p>
+                              </a>
+                          </div>
+          
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (6).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Haven Wide Legs Pants</p>
+                               <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                              </a>
+                          </div>
+  
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (2).png" alt="product image">
+                               <p class="product-name">Topman</p>
+                               <p class="product-discreption">Skinny two Cargo Trauser</p>
+                               <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                              </a>
+                          </div>
+          
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (2).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                               <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                              </a>
+                          </div>
+          
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (3).png" alt="product image">
+                               <p class="product-name">Style State</p>
+                               <p class="product-discreption">Pleated Max Skirt</p>
+                               <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                              </a>
+                          </div>
+  
+                      </div>
+                        <div class="container">
+                          <div class="carousel-caption">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
             </article>
+            <article>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (5).png" alt="product image">
+                             <p class="product-name">ONLY</p>
+                             <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                             <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (5).png" alt="product image">
+                             <p class="product-name">Trendyol</p>
+                             <p class="product-discreption">Oversized Collar Trench Coat</p>
+                             <p class="pricing-promo">Php 6,399.00</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (6).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Haven Wide Legs Pants</p>
+                             <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (1).png" alt="product image">
+                             <p class="product-name">Topman</p>
+                             <p class="product-discreption">Skinny two Cargo Trauser</p>
+                             <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (2).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                             <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (3).png" alt="product image">
+                             <p class="product-name">Style State</p>
+                             <p class="product-discreption">Pleated Max Skirt</p>
+                             <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                            </a>
+                        </div>
+                    </div>
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (4).png" alt="product image">
+                               <p class="product-name">ONLY</p>
+                               <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                               <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (5).png" alt="product image">
+                               <p class="product-name">Trendyol</p>
+                               <p class="product-discreption">Oversized Collar Trench Coat</p>
+                               <p class="pricing-promo">Php 6,399.00</p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (6).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Haven Wide Legs Pants</p>
+                               <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (1).png" alt="product image">
+                               <p class="product-name">Topman</p>
+                               <p class="product-discreption">Skinny two Cargo Trauser</p>
+                               <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (2).png" alt="product image">
+                               <p class="product-name">Cotton On</p>
+                               <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                               <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                              </a>
+                          </div>
+                          <div class="card">
+                              <a href="">
+                               <img src="img/product1 (3).png" alt="product image">
+                               <p class="product-name">Style State</p>
+                               <p class="product-discreption">Pleated Max Skirt</p>
+                               <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (4).png" alt="product image">
+                             <p class="product-name">ONLY</p>
+                             <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                             <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                            </a>
+                        </div>
+        
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (5).png" alt="product image">
+                             <p class="product-name">Trendyol</p>
+                             <p class="product-discreption">Oversized Collar Trench Coat</p>
+                             <p class="pricing-promo">Php 6,399.00</p>
+                            </a>
+                        </div>
+        
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (6).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Haven Wide Legs Pants</p>
+                             <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (1).png" alt="product image">
+                             <p class="product-name">Topman</p>
+                             <p class="product-discreption">Skinny two Cargo Trauser</p>
+                             <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                            </a>
+                        </div>
+        
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (2).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                             <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                            </a>
+                        </div>
+        
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (3).png" alt="product image">
+                             <p class="product-name">Style State</p>
+                             <p class="product-discreption">Pleated Max Skirt</p>
+                             <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                            </a>
+                        </div>
+
+                    </div>
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+          </article>
+
+          <article>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (4).png" alt="product image">
+                           <p class="product-name">ONLY</p>
+                           <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                           <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                          </a>
+                      </div>
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (5).png" alt="product image">
+                           <p class="product-name">Trendyol</p>
+                           <p class="product-discreption">Oversized Collar Trench Coat</p>
+                           <p class="pricing-promo">Php 6,399.00</p>
+                          </a>
+                      </div>
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (6).png" alt="product image">
+                           <p class="product-name">Cotton On</p>
+                           <p class="product-discreption">Haven Wide Legs Pants</p>
+                           <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                          </a>
+                      </div>
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (1).png" alt="product image">
+                           <p class="product-name">Topman</p>
+                           <p class="product-discreption">Skinny two Cargo Trauser</p>
+                           <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                          </a>
+                      </div>
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (2).png" alt="product image">
+                           <p class="product-name">Cotton On</p>
+                           <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                           <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                          </a>
+                      </div>
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (3).png" alt="product image">
+                           <p class="product-name">Style State</p>
+                           <p class="product-discreption">Pleated Max Skirt</p>
+                           <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                          </a>
+                      </div>
+                  </div>
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (4).png" alt="product image">
+                             <p class="product-name">ONLY</p>
+                             <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                             <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (5).png" alt="product image">
+                             <p class="product-name">Trendyol</p>
+                             <p class="product-discreption">Oversized Collar Trench Coat</p>
+                             <p class="pricing-promo">Php 6,399.00</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (6).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Haven Wide Legs Pants</p>
+                             <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (1).png" alt="product image">
+                             <p class="product-name">Topman</p>
+                             <p class="product-discreption">Skinny two Cargo Trauser</p>
+                             <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (2).png" alt="product image">
+                             <p class="product-name">Cotton On</p>
+                             <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                             <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="">
+                             <img src="img/product1 (3).png" alt="product image">
+                             <p class="product-name">Style State</p>
+                             <p class="product-discreption">Pleated Max Skirt</p>
+                             <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (4).png" alt="product image">
+                           <p class="product-name">ONLY</p>
+                           <p class="product-discreption">Leslie Long Sleeve Shirt</p>
+                           <p class="pricing">Php 1,437.78 <span class="cross">Php 2,899.00</span><span class="product-promo"> -50%</span></p>
+                          </a>
+                      </div>
+      
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (5).png" alt="product image">
+                           <p class="product-name">Trendyol</p>
+                           <p class="product-discreption">Oversized Collar Trench Coat</p>
+                           <p class="pricing-promo">Php 6,399.00</p>
+                          </a>
+                      </div>
+      
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (6).png" alt="product image">
+                           <p class="product-name">Cotton On</p>
+                           <p class="product-discreption">Haven Wide Legs Pants</p>
+                           <p class="pricing">Php 1,313.78 <span class="cross">Php 2,399.00</span><span class="product-promo"> -45%</span></p>
+                          </a>
+                      </div>
+
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (1).png" alt="product image">
+                           <p class="product-name">Topman</p>
+                           <p class="product-discreption">Skinny two Cargo Trauser</p>
+                           <p class="pricing">Php 1,592.78 <span class="cross">Php 32490.00</span><span class="product-promo"> -51%</span></p>
+                          </a>
+                      </div>
+      
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (2).png" alt="product image">
+                           <p class="product-name">Cotton On</p>
+                           <p class="product-discreption">Curvey Strectch Wide Leg Jeans</p>
+                           <p class="pricing">Php 1,548.00 <span class="cross">Php 2,949.00</span><span class="product-promo"> -48%</span></p>
+                          </a>
+                      </div>
+      
+                      <div class="card">
+                          <a href="">
+                           <img src="img/product1 (3).png" alt="product image">
+                           <p class="product-name">Style State</p>
+                           <p class="product-discreption">Pleated Max Skirt</p>
+                           <p class="pricing">Php 1,338.58 <span class="cross">Php 3,199.00</span><span class="product-promo"> -58%</span></p>
+                          </a>
+                      </div>
+
+                  </div>
+                    <div class="container">
+                      <div class="carousel-caption">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+        </article>
             <footer>
                 <ul>
                     <li><a href="">About</a></li>
